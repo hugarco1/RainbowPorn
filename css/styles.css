@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(28, 13, 29);
+    margin: auto;
+    padding: auto;
+}
+img {
+    max-width: 100%;
+    }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+            .neon {
+                position: absolute;
+                top: 2.5%;
+                left: 2.5%;
+                margin: 0;
+                padding: 0;
+                font-family: 'Pacifico' cursive;
+                font-size: 140px;
+                color: #fff;
+                text-shadow: 0 0 50px #d400ff;
+            }
+            .neon:after{
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0 20px;
+                z-index: -1;
+                color:#d400ff;
+                filter: blur(150px);
+            }
+            .neon:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #ff00d4;
+                z-index: -2;
+                opacity: .5;
+                filter: blur(400px);
+            }
+            nav{
+                max-width: 900px;
+                background-color: #333;
+                font-size: 20px;
+                font-family: 'Pacifico', cursive;
+                margin-top: 50px;
+            }
+            .menu-horizontal{
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .menu-horizontal > li > a{
+                display: block;
+                padding: 15px 15px;
+                color: white;
+                text-decoration: none;
+            }
+            .menu-horizontal > li:hover{
+                background-color: rgba(242, 142, 255, 0.664);
+            }
+            .menu-vertical{
+                position: absolute;
+                display: none;
+                list-style: none;
+                width: 200px;
+                background-color:rgba(0, 0, 0, 0.411);
+            }
+            .menu-horizontal li:hover .menu-vertical{
+                display: block;
+            }
+            .menu-vertical li:hover{
+                background-color:rgba(242, 142, 255, 0.664);
+            }
+            .menu-vertical li a{
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 15px 15px 15px 20px;
+            }
+            .shadow{
+                position: relative;
+                margin: auto;
+                width: 500px;
+                height: 60px;
+                background: linear-gradient(0deg,rgb(0, 0, 0),#262626);
+            }
+            .shadow:before{
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background: linear-gradient(45deg,#f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0,
+                #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f,
+                #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+                background-size: 400%;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                z-index: -1;
+                animation: animate 200000s linear infinite;
+            }
+            @keyframes animate{
+                0%
+                {
+                background-position: 0 0;
+                }
+                50%
+                {
+                background-position:4000000% 0;
+                }
+                100%
+                {
+                background-position: 0 0;
+                }
+            }
+            .videos { 
+                margin:30px; 
+            }
+            .texto-fotos{
+                font-family: 'Pacifico' cursive;
+                font-size: 13px;
+                color: #fff;
+                text-shadow: 0 0 50px #d400ff;
+                margin-left: 2%;
+            }
+            ::-webkit-scrollbar{
+                width: 15px;
+            }
+            ::-webkit-scrollbar-track{
+                background-color: rgb(28, 13, 29);
+            }
+            ::-webkit-scrollbar-thumb{
+                background: rgba(232, 155, 255, 0.904);
+                border-radius: 12px;
+            }
+            .shadow-cuenta{
+                position: relative;
+                margin: auto;
+                width: 500px;
+                height: 500px;
+                background: linear-gradient(0deg,#000,#262626);
+            }
+            .shadow-cuenta:before{
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background: linear-gradient(45deg,#f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0,
+                #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f,
+                #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+                background-size: 400%;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                z-index: -1;
+                animation: animate 20s linear infinite;
+            }
