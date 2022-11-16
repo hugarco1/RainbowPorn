@@ -2,6 +2,7 @@ body{
     background-color: rgb(28, 13, 29);
     margin: auto;
     padding: auto;
+    color: white;
 }
 img {
     max-width: 100%;
@@ -143,6 +144,7 @@ img {
                 background: linear-gradient(0deg,rgb(0, 0, 0),#262626);
                 border-radius: 15%;
             }
+
             .shadow-cuenta:before{
                 content: '';
                 position: absolute;
@@ -171,4 +173,24 @@ img {
                 {
                 background-position: 0 0;
                 }
+            }
+            #usuario{
+                color: white;
+                margin-top: 27%;
+                margin-left: 10px;
+                background-color: #262626;
+                border-color: rgb(61, 61, 61);
+                border-radius: 1%;
+                width: 50%;
+                height: 30px;
+            }
+            #contraseña{
+                color: white;
+                margin-top: 27%;
+                margin-left: 10px;
+                background-color: #262626;
+                border-color: rgb(61, 61, 61);
+                border-radius: 1%;
+                width: 50%;
+                height: 30px;
             }
