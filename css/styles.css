@@ -18,6 +18,7 @@ img {
                 font-size: 140px;
                 color: #fff;
                 text-shadow: 0 0 50px #d400ff;
+                z-index: -2;
             }
             .neon:after{
                 content: attr(data-text);
@@ -177,7 +178,7 @@ img {
             #usuario{
                 color: white;
                 margin-top: 27%;
-                margin-left: 10px;
+                margin-left: 41px;
                 background-color: #262626;
                 border-color: rgb(61, 61, 61);
                 border-radius: 1%;
@@ -186,11 +187,23 @@ img {
             }
             #contraseña{
                 color: white;
-                margin-top: 27%;
+                margin-top: 7%;
                 margin-left: 10px;
                 background-color: #262626;
                 border-color: rgb(61, 61, 61);
                 border-radius: 1%;
                 width: 50%;
                 height: 30px;
+            }
+            #inicio-sesion{
+                color: white;
+                margin-top: 5%;
+                background-color: #262626;
+                border-color: rgb(61, 61, 61);
+                border-radius: 10%;
+            }
+            #mostrar-contraseña{
+                height: 55px;
+                width: 55px;
+                color: rgba(0, 0, 0, 0);
             }

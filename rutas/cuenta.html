@@ -4,6 +4,7 @@
         <title>Rainbow Porn</title><meta charset="utf-8">
         <link rel="website icon" type="bmp" href="../img/icon.png">
         <link rel="stylesheet" href="../css/styles.css" type="text/css">
+        <script src="../main.js"></script>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <body>
@@ -35,7 +36,20 @@
         <nav style="height: 600px;" class="shadow-cuenta" align="center">
             <div>
                 <p>Usuario<input id="usuario"></p>
-                <p>Contraseña<input id="contraseña" type="password"></p>
+                <p>Contraseña<input id="contraseña" type="password"><button id="mostrar-contraseña" onclick="mostrarContrasena()"><img src="../img/mostrar-contraseña.png" style="color: rgba(0, 0, 0, 0);" height="30px"></button></p>
+                <script>
+                    function mostrarContrasena(){
+                        var tipo = document.getElementById("password");
+                        if(tipo.type == "password"){
+                            tipo.type = "text";
+                        }else{
+                            tipo.type = "password";
+                        }
+                    }
+                </script>
+                <input type="checkbox" value="Recordarme">
+                <input id="inicio-sesion" type="submit" value="Iniciar sesión">
+                <p style="font-size: 12px;">Si no tienes una cuenta todavía, registrate aquí <a href="#">"Registrate aquí"</a></p>
             </div>
         </nav>
     </body>
