@@ -62,6 +62,7 @@ img {
             }
             .menu-horizontal > li:hover{
                 background-color: rgba(242, 142, 255, 0.664);
+                border-radius: 5%;
             }
             .menu-vertical{
                 position: absolute;
@@ -69,18 +70,22 @@ img {
                 list-style: none;
                 width: 200px;
                 background-color:rgba(0, 0, 0, 0.411);
+                z-index: 2;
             }
             .menu-horizontal li:hover .menu-vertical{
                 display: block;
             }
             .menu-vertical li:hover{
                 background-color:rgba(242, 142, 255, 0.664);
+                border-radius: 5%;
+                z-index: 2;
             }
             .menu-vertical li a{
                 display: block;
                 color: white;
                 text-decoration: none;
                 padding: 15px 15px 15px 20px;
+                z-index: 2;
             }
             .shadow{
                 position: relative;
@@ -88,6 +93,7 @@ img {
                 width: 500px;
                 height: 60px;
                 background: linear-gradient(0deg,rgb(0, 0, 0),#262626);
+                border-radius: 1%;
             }
             .shadow:before{
                 content: '';
@@ -101,6 +107,7 @@ img {
                 width: calc(100% + 4px);
                 height: calc(100% + 4px);
                 z-index: -1;
+                border-radius: 1%;
                 animation: animate 200000s linear infinite;
             }
             @keyframes animate{
@@ -206,4 +213,10 @@ img {
                 height: 55px;
                 width: 55px;
                 color: rgba(0, 0, 0, 0);
+            }
+            .captcha{
+                background-color: white;
+                border-color: rgb(192, 192, 192);
+                border-width: 3px;
+                border-radius: 10%;
             }
