@@ -35,8 +35,8 @@
         <br>
         <nav style="height: 600px;" class="shadow-cuenta" align="center">
             <div>
-                <p>Usuario<input id="usuario"></p>
-                <p>Contraseña<input id="contraseña" type="password"><button id="mostrar-contraseña" onclick="mostrarContrasena()"><img src="../img/mostrar-contraseña.png" style="color: rgba(0, 0, 0, 0);" height="30px"></button></p>
+                <p>Usuario<input size="30" maxlength="15" id="usuario"></p>
+                <p>Contraseña<input size="30" maxlength="20" id="contraseña" type="password"><button id="mostrar-contraseña" onclick="mostrarContrasena()"><img src="../img/mostrar-contraseña.png" style="color: rgba(0, 0, 0, 0);" height="30px"></button></p>
                 <script>
                     function mostrarContrasena(){
                         var tipo = document.getElementById("password");
@@ -47,12 +47,12 @@
                         }
                     }
                 </script>
+                <div align="center" class="captcha">
+                    <p style="color: black;"><input type="checkbox"> No soy un robot</p>
+                </div>
                 <input type="checkbox" value="Recordarme">
                 <input id="inicio-sesion" type="submit" value="Iniciar sesión">
                 <p style="font-size: 12px;">Si no tienes una cuenta todavía, registrate aquí <a style="color: rgb(121, 251, 255);" href="#">"Registrate aquí"</a></p>
-                <div align="center" class="captcha" style="width: 150px; height: 30px;">
-                    <input type="checkbox">
-                </div>
             </div>
         </nav>
     </body>
