@@ -152,7 +152,6 @@ img {
                 background: linear-gradient(0deg,rgb(0, 0, 0),#262626);
                 border-radius: 15%;
             }
-
             .shadow-cuenta:before{
                 content: '';
                 position: absolute;
@@ -219,8 +218,9 @@ img {
                 color: rgba(0, 0, 0, 0);
             }
             .captcha{
+                font-family: Arial;
                 margin-left: 30%;
-                margin-right: 30%;
+                margin-right: 10%;
                 background-color: white;
                 border-color: rgb(192, 192, 192);
                 border-width: 3px;
